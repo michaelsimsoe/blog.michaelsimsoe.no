@@ -1,0 +1,4 @@
+baseURL = "http://michaelsimsoe.no/"
+languageCode = "no"
+title = "michaelsimsoe.no"
+theme = "hermit"
