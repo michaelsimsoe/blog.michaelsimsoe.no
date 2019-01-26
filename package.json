@@ -4,7 +4,7 @@
   "description": "[![Build Status](https://travis-ci.org/michaelsimsoe/blog.michaelsimsoe.no.svg?branch=master)](https://travis-ci.org/michaelsimsoe/blog.michaelsimsoe.no)",
   "main": "index.js",
   "scripts": {
-    "deploy": "node deply.js"
+    "deploy": "node deploy.js"
   },
   "repository": {
     "type": "git",
