@@ -11,7 +11,8 @@ const ignoredRemoteItems = new Set([
   '.well-known',
   'cgi-bin',
   '.htaccess',
-  'favicon.ico'
+  'favicon.ico',
+  'noroff'
 ]);
 
 let itemsToUpload = [];
