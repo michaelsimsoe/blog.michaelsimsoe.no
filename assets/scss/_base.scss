@@ -1,0 +1,67 @@
+:root {
+  font-size: 10px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+html {
+  border: 25px solid white;
+  min-height: 100vh;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+html, body {
+  background-color: $primary-color;
+  line-height: 1.5;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.8rem;
+  // color: #AD378A;
+  // color: #38ABE0;
+  color: $font-color;
+  // color: #BF6900;
+  background-image: url('/images/michaelsimsoehead.svg');
+  background-position: 30vw 20vh;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-attachment: fixed;
+  padding: 10px;
+  @media (max-width: 370px) {
+    padding: 5px;
+  }
+}
+
+h1, h2, h3 {
+  color: #6A5091;
+  font-family: 'Playfair Display', serif;;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+a {
+  color: $font-color;
+  text-decoration: underline;
+  text-decoration-color: #AD378A;
+}
+
+a:active {
+  color: #6A5091; 
+}
+
+a:hover {
+  color: #AD378A;
+}
+
+a:visited {
+  color: #38ABE0;
+}

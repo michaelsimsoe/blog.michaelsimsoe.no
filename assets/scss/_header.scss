@@ -1,0 +1,46 @@
+
+.main-header {
+  color: #6A5091;
+  margin-bottom: 25px;
+
+  @media (max-width: 600px) {
+      margin-right: 2rem;
+  }
+
+  &__top {
+    left: 20px;
+    transform: rotate(-12deg);
+    top: 25px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+
+  }
+  &__mid {
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: 638px) {
+      font-size: 36px;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 30px;
+    }
+  }
+  &__sub {
+    font-family: 'Work Sans', sans-serif;
+    color: $font-color;
+    margin: 0;
+    margin-top: -15px;
+    padding: 0;
+    
+    @media (max-width: 900px) {
+      font-size: 1.8rem;  
+    }
+    @media (max-width: 600px) {
+      font-size: 1.2rem;  
+    }
+  }
+}
