@@ -1,0 +1,19 @@
+{{ define "head" }}
+  <style>
+    html,
+    body {
+      background-image: none;
+    }
+  </style>
+{{end}}
+{{ define "main" }}
+  <ul>
+    <!-- orders content according to the "publishdate" field in front matter -->
+    {{ range .Pages.ByPublishDate }}
+    <li>
+      <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+      <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+    </li>
+    {{ end }}
+  </ul>
+{{end}}

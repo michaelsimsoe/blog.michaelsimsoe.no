@@ -4,28 +4,35 @@
 }
 
 html {
-  border: 25px solid white;
+  background-color: #fff;
+  border: 25px solid #fff;
   min-height: 100vh;
   box-sizing: border-box;
   scroll-behavior: smooth;
 
+  @media (max-width: 500px) {
+    border-width: 15px;
+  }
+  @media (max-width: 370px) {
+    border-width: 5px;
+  }
 }
 
 html, body {
   background-color: $primary-color;
-  line-height: 1.5;
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1.8rem;
-  // color: #AD378A;
-  // color: #38ABE0;
-  color: $font-color;
-  // color: #BF6900;
   background-image: url('/images/michaelsimsoehead.svg');
   background-position: 30vw 20vh;
   background-repeat: no-repeat;
   background-size: 40%;
-  background-attachment: fixed;
+  color: $font-color;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2rem;
+  // color: #AD378A;
+  // color: #38ABE0;
+  // color: #BF6900;
+  line-height: 1.5;
   padding: 10px;
+
   @media (max-width: 370px) {
     padding: 5px;
   }

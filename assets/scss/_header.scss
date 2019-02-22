@@ -15,6 +15,11 @@
     padding: 0;
     position: absolute;
 
+    @media (max-width: 370px) {
+      top: 2px;
+      left: 4px;
+    }
+
   }
   &__mid {
     font-size: 48px;

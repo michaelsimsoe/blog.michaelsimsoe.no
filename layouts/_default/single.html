@@ -1,0 +1,36 @@
+{{ define "head" }}
+  <style>
+    html, body {
+      background-image: none;
+    }
+  </style>
+{{end}}
+{{ define "header" }}
+  <header class="post-header">
+    <h2 class="post-header__mid">Michael Krøyserth-Simsø</h2>
+    <h3 class="post-header__sub">micaelsimsoe.no</h3>
+  </header>
+{{end}}
+{{ define "main" }}
+<main class="post">
+  <article class="post__body">
+    <header>
+      <h1>{{.Title}}</h1>
+      <h3>{{.Date}}</h3>
+      <div class="post__tags">
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+          {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+            <a class="tag" href="{{ .Permalink }}">{{ $name }}</a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </header>
+    <section class="post__content">
+      {{.Content}}
+    </section>
+    <footer>
+      This is footer
+    </footer>
+  </article>
+</main>
+{{end}}
