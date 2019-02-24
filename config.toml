@@ -7,3 +7,9 @@ title = "michaelsimsoe.no"
   name = "Michael Krøyserth-Simsø"
 
 images = [""]
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":fileModTime", ":default"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]

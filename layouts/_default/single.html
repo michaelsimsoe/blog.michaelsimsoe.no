@@ -6,6 +6,7 @@
   </style>
 {{end}}
 {{ define "header" }}
+  <progress class="progress-bar" value="0"></progress>
   <header class="post-header">
     <h2 class="post-header__mid">Michael Krøyserth-Simsø</h2>
     <h3 class="post-header__sub">micaelsimsoe.no</h3>
@@ -13,10 +14,15 @@
 {{end}}
 {{ define "main" }}
 <main class="post">
+
   <article class="post__body">
     <header>
       <h1>{{.Title}}</h1>
       <h3>{{.Date}}</h3>
+      <h3>{{.PublishDate}}</h3>
+      <h3>{{.Lastmod}}</h3>
+      <h4>Lesetid: <span>{{.ReadingTime}} minutter</span></h4>
+      <p>{{.Summary}}</p>
       <div class="post__tags">
         {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
           {{ with $.Site.GetPage (printf "/tags/%s" $name) }}

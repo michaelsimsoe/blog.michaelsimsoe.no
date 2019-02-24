@@ -7,6 +7,7 @@ const upath = require('upath');
 const fs = require('fs');
 
 const remotePathBase = '/var/www/michaelsimsoe.no/html';
+const projectPath = '/home/michaels/projects/blog.michaelsimsoe.no';
 const ignoredRemoteItems = new Set([
   '.well-known',
   'cgi-bin',
