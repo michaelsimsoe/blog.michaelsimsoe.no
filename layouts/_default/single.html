@@ -21,7 +21,6 @@
       <h3>Published: {{.PublishDate}}</h3>
       <h3>Last modified: {{.Lastmod}}</h3>
       <h4>Lesetid: <span>{{.ReadingTime}} minutter</span></h4>
-      <p>{{.Summary}}</p>
       <div class="post__tags">
         {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
           {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
