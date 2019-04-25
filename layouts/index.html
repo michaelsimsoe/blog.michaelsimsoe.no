@@ -14,12 +14,12 @@
     </section>
     <section class="content__latest-posts speech-bubble">
       <div class="content__latest-posts__push"></div>
-      <a href="./a"><h2>Jeg skriver innimellom</h2></a>
+      <a href="/posts"><h2>Jeg skriver innimellom</h2></a>
       <ul>
         <!-- orders content according to the "publishdate" field in front matter -->
         {{ range first 5 .Pages.ByPublishDate }}
         <li>
-          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
           <time>{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
         </li>
         {{ end }}

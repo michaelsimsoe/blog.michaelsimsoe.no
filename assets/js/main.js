@@ -16,12 +16,17 @@ toggle.addEventListener('click', function() {
   }
 });
 
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function () { myFunction() };
+// When the user scrolls the page, execute myFunction
+document.querySelector('.progress-bar').style.width = '0%';
+window.onscroll = function() {
+  myFunction();
+};
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
-  document.querySelector(".progress-bar").style.width = scrolled + "%";
+  document.querySelector('.progress-bar').style.width = scrolled + '%';
 }

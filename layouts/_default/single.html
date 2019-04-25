@@ -8,8 +8,10 @@
 {{ define "header" }}
   <progress class="progress-bar" value="0"></progress>
   <header class="post-header">
-    <h2 class="post-header__mid">Michael Krøyserth-Simsø</h2>
-    <h3 class="post-header__sub">micaelsimsoe.no</h3>
+    <a href="/">
+      <h2 class="post-header__mid">Michael Krøyserth-Simsø</h2>
+      <h3 class="post-header__sub">micaelsimsoe.no</h3>
+    </a>
   </header>
 {{end}}
 {{ define "main" }}
@@ -18,8 +20,8 @@
   <article class="post__body">
     <header>
       <h1>{{.Title}}</h1>
-      <h3>Published: {{.PublishDate}}</h3>
-      <h3>Last modified: {{.Lastmod}}</h3>
+      <h3>Publisert: {{ .PublishDate.Format "January 2, 2006" }}</h3>
+      <h3>Sist endret: {{ .Lastmod.Format "January 2, 2006" }}</h3>
       <h4>Lesetid: <span>{{.ReadingTime}} minutter</span></h4>
       <div class="post__tags">
         {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
