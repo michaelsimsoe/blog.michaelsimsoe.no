@@ -217,10 +217,10 @@
   border: none;
 
   /* Progress bar container for Firefox/IE10+ */
-  background-color: red;
+  background-color: #6A5091;
 
   /* Progress bar value for IE10+ */
-  color: red;
+  color: #6A5091;
 }
 
 .progress-bar::-webkit-progress-bar {
@@ -228,9 +228,9 @@
 }
 
 .progress-bar::-webkit-progress-value {
-  background-color: red;
+  background-color: #6A5091;
 }
 
 .progress-bar::-moz-progress-bar {
-  background-color: red;
+  background-color: #6A5091;
 }
