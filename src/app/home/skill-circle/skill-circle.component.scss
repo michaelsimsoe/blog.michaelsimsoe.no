@@ -1,0 +1,26 @@
+.skill-circle {
+  border-radius: 50%;
+  background-color: #f5f4dc;
+  height: 5em;
+  width: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #6a5091;
+  border: #6a5091 solid 2px;
+}
+
+@media (min-width: 60rem) {
+  .skill-circle {
+    border-radius: 50%;
+    background-color: #f5f4dc;
+    height: 10em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: #6a5091;
+    border: #6a5091 solid 2px;
+  }
+}

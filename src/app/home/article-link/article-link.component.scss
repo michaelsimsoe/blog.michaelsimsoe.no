@@ -1,0 +1,95 @@
+.article-link {
+  background-color: #ad378a;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  color: white;
+  box-shadow: 10px 10px 3px #f086d0;
+  display: grid;
+  grid-template-columns: auto auto 33%;
+  grid-template-rows: auto auto auto;
+}
+.article-link__date {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  transform: rotate(-90deg);
+  padding-top: 1.3rem;
+}
+.article-link__header {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+.article-link__content {
+  display: none;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  padding-right: 1rem;
+}
+.article-link__footer {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  background-color: #f5f4dc;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.article-link__footer a {
+  text-decoration: none;
+  color: #6a5091;
+  text-transform: uppercase;
+}
+
+@media (min-width: 60rem) {
+  .article-link {
+    background-color: #ad378a;
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    color: white;
+    box-shadow: 10px 10px 3px #f086d0;
+    display: grid;
+    grid-template-columns: auto auto 33%;
+    grid-template-rows: auto auto auto;
+  }
+  .article-link__date {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    transform: rotate(-90deg);
+    padding-top: 2rem;
+  }
+  .article-link__header {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    padding-right: 1rem;
+  }
+  .article-link__content {
+    display: block;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    padding-right: 1rem;
+  }
+  .article-link__footer {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background-color: #f5f4dc;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .article-link__footer a {
+    text-decoration: none;
+    color: #6a5091;
+    text-transform: uppercase;
+  }
+}
