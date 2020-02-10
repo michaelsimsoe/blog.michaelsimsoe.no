@@ -1,0 +1,84 @@
+:host {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1.625rem;
+  padding-bottom: 0.25rem;
+  transition: background-color 0.4s ease;
+  &.open {
+    background-color: #f9f9f9;
+  }
+}
+
+.main-header__logo {
+  line-height: 1;
+  h1 {
+    font-size: 22px;
+  }
+  h3 {
+    color: #707070;
+    font-size: 15px;
+
+    span {
+      color: #931337;
+    }
+  }
+}
+
+.main-header__hamburger {
+  display: flex;
+  align-items: center;
+  width: 8%;
+  height: 32px;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  z-index: 1000;
+  margin-left: auto;
+
+  & span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 24px;
+    background: #707070;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  & span:nth-child(1) {
+    top: 7px;
+  }
+
+  & span:nth-child(2) {
+    top: 14px;
+  }
+
+  & span:nth-child(3) {
+    top: 21px;
+  }
+
+  &.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  &.open span:nth-child(2) {
+    top: 15px;
+    transform: rotate(45deg);
+  }
+
+  &.open span:nth-child(3) {
+    top: 15px;
+    transform: rotate(-45deg);
+  }
+}

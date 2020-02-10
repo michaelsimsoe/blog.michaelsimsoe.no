@@ -52,3 +52,25 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+mks-blog .blog-content > *:not(.code-toolbar) {
+  padding-left: 1.3125rem;
+  padding-right: 1.3125rem;
+}
+
+mks-blog {
+  .code-toolbar {
+    position: relative;
+
+    .toolbar-item {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      button {
+        color: #fff;
+      }
+    }
+  }
+}

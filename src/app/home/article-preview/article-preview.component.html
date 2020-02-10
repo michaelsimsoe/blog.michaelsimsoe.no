@@ -1,0 +1,29 @@
+<article class="article">
+  <header>
+    <h3>{{ postData.title }}</h3>
+
+    <div class="article__tags">
+      <div class="article__tag" *ngFor="let tag of postData.tags">
+        {{ tag }}
+      </div>
+    </div>
+    <div class="article__datetime">
+      <time [dateTime]="postData.date">{{ postData.date }}</time>
+      <div class="article__read-time">
+        ca. {{ postData.readTime }} minutter med lesestoff
+      </div>
+    </div>
+  </header>
+  <section class="article__intro">
+    <p>
+      {{ postData.description
+      }}<a
+        [routerLink]="[postData.route]"
+        routerLinkActive="router-link-active"
+        class="article__read-more"
+        href="/"
+        ><strong>[...]</strong></a
+      >
+    </p>
+  </section>
+</article>
