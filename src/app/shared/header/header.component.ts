@@ -1,4 +1,19 @@
-import { Component, OnInit, EventEmitter } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  EventEmitter,
+  AfterViewInit,
+  HostBinding,
+} from '@angular/core';
+import { fromEvent } from 'rxjs';
+import {
+  distinctUntilChanged,
+  filter,
+  map,
+  pairwise,
+  share,
+  throttleTime,
+} from 'rxjs/operators';
 
 @Component({
   selector: 'mks-header',
@@ -8,6 +23,7 @@ import { Component, OnInit, EventEmitter } from '@angular/core';
 export class HeaderComponent implements OnInit {
   private openNavigation: EventEmitter<boolean> = new EventEmitter();
   navigationOpen = false;
+
   constructor() {}
 
   ngOnInit(): void {}

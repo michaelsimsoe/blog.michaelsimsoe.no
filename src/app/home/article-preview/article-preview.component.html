@@ -3,9 +3,10 @@
     <h3>{{ postData.title }}</h3>
 
     <div class="article__tags">
-      <div class="article__tag" *ngFor="let tag of postData.tags">
-        {{ tag }}
-      </div>
+      <mks-article-tag
+        *ngFor="let tag of postData.tags"
+        [tag]="tag"
+      ></mks-article-tag>
     </div>
     <div class="article__datetime">
       <time [dateTime]="postData.date">{{ postData.date }}</time>
@@ -18,7 +19,7 @@
     <p>
       {{ postData.description
       }}<a
-        [routerLink]="[postData.route]"
+        [routerLink]="postData.route"
         routerLinkActive="router-link-active"
         class="article__read-more"
         href="/"

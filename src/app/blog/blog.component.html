@@ -1,3 +1,23 @@
-<article class="blog-content">
+<article class="blog-content" *ngIf="post$ | async as post">
+  <header class="blog-content__header">
+    <div class="blog-content__heading-container">
+      <h1>{{ post.title }}</h1>
+    </div>
+
+    <div class="article__tags">
+      <mks-article-tag
+        *ngFor="let tag of post.tags"
+        [tag]="tag"
+      ></mks-article-tag>
+    </div>
+
+    <div class="article__datetime">
+      <time [dateTime]="post.date">{{ post.date }}</time>
+      <div class="article__read-time">
+        ca. {{ post.readTime }} minutter med lesestoff
+      </div>
+    </div>
+  </header>
+
   <scully-content></scully-content>
 </article>
