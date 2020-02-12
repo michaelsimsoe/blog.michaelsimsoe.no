@@ -12,5 +12,8 @@
     <span></span>
     <span></span>
   </div>
-  <mks-navigation [class.open]="navigationOpen"></mks-navigation>
+  <mks-navigation
+    [class.open]="navigationOpen"
+    (closeNavigation)="toggleNavigation()"
+  ></mks-navigation>
 </header>

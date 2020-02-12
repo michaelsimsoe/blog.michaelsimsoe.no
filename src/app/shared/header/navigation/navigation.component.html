@@ -1,5 +1,15 @@
-<a [routerLink]="['/']" routerLinkActive="router-link-active">Hjem</a>
-<a [routerLink]="['/about']" routerLinkActive="router-link-active">Om meg</a>
-<a [routerLink]="['/articles']" routerLinkActive="router-link-active"
+<a (click)="close()" [routerLink]="['/']" routerLinkActive="router-link-active"
+  >Hjem</a
+>
+<a
+  (click)="close()"
+  [routerLink]="['/about']"
+  routerLinkActive="router-link-active"
+  >Om meg</a
+>
+<a
+  (click)="close()"
+  [routerLink]="['/articles']"
+  routerLinkActive="router-link-active"
   >Artikler</a
 >
