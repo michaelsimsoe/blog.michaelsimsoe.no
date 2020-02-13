@@ -15,6 +15,7 @@ import { ArticlePreviewComponent } from './home/article-preview/article-preview.
 import { LogoComponent } from './shared/header/logo/logo.component';
 import { ArticleTagComponent } from './shared/article-tag/article-tag.component';
 import { SharedModuleModule } from './shared-module/shared-module.module';
+import { ArticlesComponent } from './articles/articles.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SharedModuleModule } from './shared-module/shared-module.module';
     NavigationComponent,
     ArticlePreviewComponent,
     LogoComponent,
+    ArticlesComponent,
   ],
   imports: [
     BrowserModule,

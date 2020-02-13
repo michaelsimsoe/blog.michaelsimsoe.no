@@ -36,7 +36,7 @@ export class MetaService {
   }
 
   private setTitle(title: string): void {
-    this.title.setTitle(`D-Koppenhagen.de | ${title}`);
+    this.title.setTitle(`michaelsimsoe.no | ${title}`);
   }
 
   private setDescription(description: string) {
@@ -50,7 +50,7 @@ export class MetaService {
     });
     this.meta.updateTag({
       name: 'twitter:site',
-      content: '@d-koppenhagen',
+      content: '@michaelsimsoe',
     });
     this.meta.updateTag({
       name: 'twitter:description',
@@ -58,7 +58,7 @@ export class MetaService {
     });
     this.meta.updateTag({
       name: 'twitter:image',
-      content: `https://d-koppenhagen.de/${post.thumbnail}`,
+      content: `https://michaelsimsoe.no/${post.thumbnail}`,
     });
   }
 
@@ -70,11 +70,11 @@ export class MetaService {
     });
     this.meta.updateTag({
       name: 'og:image',
-      content: `https://d-koppenhagen.de/${post.thumbnail}`,
+      content: `https://michaelsimsoe.no/${post.thumbnail}`,
     });
     this.meta.updateTag({
       name: 'og:url',
-      content: `https://d-koppenhagen.de${post.route}`,
+      content: `https://michaelsimsoe.no/${post.route}`,
     });
   }
 

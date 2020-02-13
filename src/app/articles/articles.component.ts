@@ -1,14 +1,14 @@
-import { Component, OnInit, OnChanges, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ScullyRoute, ScullyRoutesService } from '@scullyio/ng-lib';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Component({
-  selector: 'mks-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'mks-articles',
+  templateUrl: './articles.component.html',
+  styleUrls: ['./articles.component.scss'],
 })
-export class HomeComponent implements OnInit, OnChanges {
+export class ArticlesComponent implements OnInit {
   blogPostData$: Observable<ScullyRoute[]>;
   @Input() max: number;
   @Input() tags: string;

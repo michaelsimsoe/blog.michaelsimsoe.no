@@ -29,7 +29,6 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {}
 
   toggleNavigation(): void {
-    console.log('called');
     this.navigationOpen = !this.navigationOpen;
   }
 }

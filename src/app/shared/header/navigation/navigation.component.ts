@@ -27,7 +27,6 @@ export class NavigationComponent implements OnInit {
   ngOnInit(): void {}
 
   close(): void {
-    console.log('closing');
     this.closeNavigation.emit(true);
   }
 }

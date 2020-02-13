@@ -6,6 +6,7 @@
       <mks-article-tag
         *ngFor="let tag of postData.tags"
         [tag]="tag"
+        [ngClass]="'tag-' + tag"
       ></mks-article-tag>
     </div>
     <div class="article__datetime">

@@ -1,0 +1,9 @@
+<main class="wrapper wrapper-content">
+  <section class="articles-section">
+    <section class="articles" *ngIf="blogPostData$ | async as blogPosts">
+      <article *ngFor="let post of blogPosts; let i = index">
+        <mks-article-preview [postData]="post"></mks-article-preview>
+      </article>
+    </section>
+  </section>
+</main>

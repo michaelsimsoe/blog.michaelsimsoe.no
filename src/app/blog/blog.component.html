@@ -8,6 +8,7 @@
       <mks-article-tag
         *ngFor="let tag of post.tags"
         [tag]="tag"
+        [ngClass]="'tag-' + tag"
       ></mks-article-tag>
     </div>
 
@@ -19,5 +20,7 @@
     </div>
   </header>
 
-  <scully-content></scully-content>
+  <div class="blog-content__container">
+    <scully-content></scully-content>
+  </div>
 </article>

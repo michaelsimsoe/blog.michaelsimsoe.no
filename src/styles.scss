@@ -56,7 +56,7 @@ img {
   height: auto;
 }
 
-mks-blog .blog-content > *:not(.code-toolbar) {
+mks-blog .blog-content > .blog-content__container > *:not(.code-toolbar) {
   padding-left: 1.3125rem;
   padding-right: 1.3125rem;
 }
@@ -98,5 +98,27 @@ mks-blog {
         color: #fff;
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  main.wrapper {
+    margin-top: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 42rem;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  mks-blog .blog-content > .blog-content__container > *:not(.code-toolbar) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  mks-blog .blog-content > .blog-content__container > .blog-content__filename {
+    padding-left: 1.3125rem;
+    padding-right: 1.3125rem;
   }
 }

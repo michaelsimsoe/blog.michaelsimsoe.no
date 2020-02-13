@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ArticleTagComponent implements OnInit {
   @Input() tag: any;
+  hostClass = `class.${this.tag}`;
   constructor() {}
 
   ngOnInit(): void {}
