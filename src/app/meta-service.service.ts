@@ -58,7 +58,7 @@ export class MetaService {
     });
     this.meta.updateTag({
       name: 'twitter:image',
-      content: `https://michaelsimsoe.no/${post.thumbnail}`,
+      content: `https://michaelsimsoe.no/${post.heroImage}`,
     });
   }
 
@@ -70,7 +70,7 @@ export class MetaService {
     });
     this.meta.updateTag({
       name: 'og:image',
-      content: `https://michaelsimsoe.no/${post.thumbnail}`,
+      content: `https://michaelsimsoe.no/${post.heroImage}`,
     });
     this.meta.updateTag({
       name: 'og:url',

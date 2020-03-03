@@ -3,7 +3,9 @@
     <div class="blog-content__heading-container">
       <h1>{{ post.title }}</h1>
     </div>
-
+    <div class="article__thero-img">
+      <img [src]="post.heroImage" alt="post hero image" />
+    </div>
     <div class="article__tags">
       <mks-article-tag
         *ngFor="let tag of post.tags"
