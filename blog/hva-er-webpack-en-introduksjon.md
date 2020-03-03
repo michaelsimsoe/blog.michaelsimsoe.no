@@ -3,11 +3,12 @@ title: Hva er webpack? En introduksjon
 description: Webpack er en modulbunter som bringer mer på banen enn det som tidligere har vært. Vi ser også på litt historie.
 tags:
   - javascript
-  - utvikling
+  - utviklingsmiljø
   - produktivitet
+  - webpack
 publish: true
 date: 27.02.2020
-updated:
+updated: 03.03.2020
 readTime: 4
 heroImage: assets/images/blog/webpack.png
 author: Michael Krøyserth-Simsø

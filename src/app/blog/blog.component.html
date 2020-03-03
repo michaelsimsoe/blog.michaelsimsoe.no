@@ -2,6 +2,7 @@
   <header class="blog-content__header">
     <div class="blog-content__heading-container">
       <h1>{{ post.title }}</h1>
+      <small>Av {{ post.author }}, såklart</small>
     </div>
     <div class="article__thero-img">
       <img [src]="post.heroImage" alt="post hero image" />
@@ -15,7 +16,9 @@
     </div>
 
     <div class="article__datetime">
-      <time [dateTime]="post.date">{{ post.date }}</time>
+      <time [dateTime]="post.date"
+        >{{ post.date }} <em>(oppdatert {{ post.updated }})</em></time
+      >
       <div class="article__read-time">
         ca. {{ post.readTime }} minutter med lesestoff
       </div>
