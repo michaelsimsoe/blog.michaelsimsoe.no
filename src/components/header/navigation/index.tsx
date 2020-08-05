@@ -22,7 +22,7 @@ export const Navigation: React.FC<NavigationProps> = ({
       >
         Hjem
       </Link>
-      <Link
+      {/* <Link
         onClick={() => {
           closeSidebar();
         }}
@@ -39,7 +39,7 @@ export const Navigation: React.FC<NavigationProps> = ({
         to="/artikler"
       >
         Artikler
-      </Link>
+      </Link> */}
     </div>
   );
 };
