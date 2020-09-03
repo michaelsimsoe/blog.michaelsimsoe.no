@@ -40,10 +40,14 @@ const BlogPostTemplate: React.FC<Props> = ({ data, pageContext, location }) => {
             <h1>{post.frontmatter.title}</h1>
           </div>
           <div className={styles.hero_img}>
-            <Image
-              fluid={post.frontmatter.heroimage.sharp.fluid}
-              alt="post hero image"
-            />
+            {post.frontmatter.heroimage ? (
+              <Image
+                fluid={post.frontmatter.heroimage.sharp.fluid}
+                alt="post hero image"
+              />
+            ) : (
+              ''
+            )}
           </div>
           <div className={styles.article__tags}>
             {post.frontmatter.tags.map((tag: any) => {
