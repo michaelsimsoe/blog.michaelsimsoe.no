@@ -17,6 +17,17 @@
   }
 }
 
+.angular {
+  background: rgb(159, 0, 38);
+  background: linear-gradient(
+    249deg,
+    rgba(159, 0, 38, 1) 44%,
+    rgba(195, 0, 47, 1) 54%
+  );
+  a {
+    color: #ffffff;
+  }
+}
 .javascript {
   background-color: #bfb5ff;
   a {

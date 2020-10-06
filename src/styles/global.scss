@@ -50,3 +50,11 @@ pre[class*='language-'] {
     left: -1.3125rem;
   }
 }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  background: none !important;
+}

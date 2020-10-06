@@ -1,6 +1,7 @@
 export const tag: string;
 export const default_tag: string;
 export const defaultTag: string;
+export const angular: string;
 export const javascript: string;
 export const testing: string;
 export const programmering: string;
