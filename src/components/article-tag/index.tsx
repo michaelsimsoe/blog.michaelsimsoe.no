@@ -8,8 +8,8 @@ interface ArticlTagProps {
 }
 export const ArticleTag: React.FC<ArticlTagProps> = ({ tag }) => {
   let tagClass = '';
-  if (tag in styles) {
-    tagClass = styles[tag];
+  if (tag.toLowerCase().split(' ').join('_') in styles) {
+    tagClass = styles[tag.toLowerCase().split(' ').join('_')];
   } else {
     tagClass = styles.default_tag;
   }

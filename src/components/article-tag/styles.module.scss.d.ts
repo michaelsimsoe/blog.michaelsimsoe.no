@@ -3,6 +3,8 @@ export const default_tag: string;
 export const defaultTag: string;
 export const angular: string;
 export const javascript: string;
+export const ruby_on_rails: string;
+export const rubyOnRails: string;
 export const testing: string;
 export const programmering: string;
 export const kodekvalitet: string;

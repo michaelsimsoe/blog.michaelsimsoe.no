@@ -11,7 +11,7 @@ tags:
 heroimage: ./images/service.png
 ---
 
-# En singleton som ikke vil
+# ☁ En singleton som ikke vil
 
 En service i Angular kan opptre som en singleton i applikasjonen, altså så at det kun opprettes en instans av den, hvis providedIn egenskapen settes til 'root':
 
@@ -31,13 +31,13 @@ Dette er forventet adferd. Så når dette ikke var tilfelle under dagens jobbkod
 
 Etter nærmere etterforskning viser det seg at innholdet i det aktuelle objektet varierer etter hvor i applikasjonen metodene invokeres. Jeg henter inn servicen i flere komponenter, men det skal jo ikke ha noe å si? _providedIn_ er satt til _root_ ihht til dokumentasjonen. Usikkerheten eksploderer og jeg roter rundt og prøver tilfeldige ting, trykker meg gjennom debuggeren linje for linje, igjen og igjen.
 
-## Det logiske neste steg...
+## 🗺 Det logiske neste steg...
 
 Er selvfølgelig å spørre en voksen om hjelp. Slacker opp en erfaren kollega. Deler skjerm. Han deler mitt tankesett vedrørende service som singleton. Vi utelukker typos og tullefeil da jeg er en flittig bruker av CLIen og import skjer vha (ctr + .).
 
 Den erfarne kollega spekulerer og forespør i en bisetning om det er forkjsell på url i importen i de to forskjellige komponentene hvor servicen brukes.
 
-### Lo and behold
+### 👏 Lo and behold
 
 **_Komponent 1_**
 ![Komponent 1](./import.png)
