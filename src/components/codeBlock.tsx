@@ -1,7 +1,7 @@
 import React from 'react';
 import Highlight, { defaultProps } from 'prism-react-renderer';
 import theme from 'prism-react-renderer/themes/nightOwl';
-import Prism from 'prism-react-renderer/prism';
+// import Prism from 'prism-react-renderer/prism';
 
 interface CodeProps {
   children: any;

@@ -22,13 +22,15 @@ interface Props {
 const BlogIndex: React.FC<Props> = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title || 'yo';
   const posts = data.allMdx.edges;
-
+  const publishedPosts = posts.filter((post:any)=> {
+    return post.node.frontmatter.published === true;
+  })
   return (
     <>
       <Layout location={location} title={siteTitle}>
         <SEO title="Jeg liker deg" />
         <Intro />
-        <ArticleList articles={posts} />
+        <ArticleList articles={publishedPosts} />
       </Layout>
     </>
   );
@@ -56,6 +58,7 @@ export const pageQuery = graphql`
             title
             description
             tags
+            published
             updated(formatString: "DD.MM.YYYY")
           }
         }

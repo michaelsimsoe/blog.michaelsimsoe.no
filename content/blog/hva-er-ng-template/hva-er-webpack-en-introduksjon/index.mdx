@@ -9,11 +9,12 @@ tags:
   - angular
   - direktiver
 # heroimage: ./images/webpack.png
+published: true
 ---
 
 _Jeg skal bli den beste Angularutvikleren jeg kan bli. For å bli best må man kunne det grunnleggende godt. Meget godt!_
 
-# ❓ Hva er greia med ng-template?
+# 🤔 Hva er greia med ng-template?
 
 I korte trekk: ng-template er direktivet som produseres i bakkant når du bruker snacksy angularsukker som \*ngIf og \*ngFor.
 
@@ -37,7 +38,7 @@ og Angular produserer no a la dette i bakkant:
 
 Ikke så veldig livsendrende informasjon å sitte på, men kult å vite. Uansett så har du nok vært borti iværtfall to anledning hvor du har vært nødt til å benytte ng-template.
 
-### 🎠 En else til din ngIf
+### 🔀 En else til din ngIf
 
 Du kan selvfølgelig fyre opp en \*ngIf for både den positive og den negative tilstanden, sånn ca. slik:
 
@@ -100,7 +101,7 @@ for \*ngFor blir magien i bakkant slik:
 
 <br />
 
-### ❎ Flere strukturelle direktiver på samme element? Njet!
+### 🛑 Flere strukturelle direktiver på samme element? Njet!
 
 Det hender jo absolutt innimellom at man ønsker å løkke gjennom noe 'hvis' ett eller annet. Da hadde det jo vært glimrende å kunne gjøre noe slikt:
 
@@ -120,7 +121,7 @@ Akk, men nei! Det lar seg ei gjøre. Løsning kan jo tenkes å bli noe slik da:
   </div>
 ```
 
-Litt skittent med litt ekstra fjas i dokumentet, så hva hvis vi henter inn en venn av ng-template? La meg introdusere ng-content!
+Litt skittent med litt ekstra fjas i dokumentet 🚯, så hva hvis vi henter inn en venn av ng-template? La meg introdusere ng-content!
 
 ```javascript
   <ng-content  *ngIf="noDogs">
@@ -130,4 +131,4 @@ Litt skittent med litt ekstra fjas i dokumentet, så hva hvis vi henter inn en v
   </ng-content>
 ```
 
-Kult! Fungerer som bare det. ng-content har så meget kult å by på. Jeg tenker at vi gløtter litt mer på den i en egen post.
+🏆 Kult! Fungerer som bare det. ng-content har så meget kult å by på. Jeg tenker at vi gløtter litt mer på den i en egen post.
