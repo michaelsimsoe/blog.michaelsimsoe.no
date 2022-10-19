@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 import * as styles from './styles.module.scss';
 
@@ -10,8 +9,7 @@ export const Footer: React.FC = () => {
         <section>
           <p>
             Jeg heter Michael Krøyserth-Simsø. Jeg en fullstackutvikler med
-            hovedfokus på frontend. Holder til i Tromsø. Jobber helst med
-            Javascript og en del PHP og Laravel. Har en
+            hovedfokus på frontend. Holder til i Tromsø. Liker alt Javascript. Har en
             forkjærlighet for design og interaksjonsdesign. Synes i all
             hemmelighet at DevOps er spennende.
           </p>
