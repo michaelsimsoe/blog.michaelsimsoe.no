@@ -29,7 +29,6 @@ const BlogPostTemplate: React.FC<Props> = ({ data, pageContext, location, childr
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
   const timeToRead = Math.floor(post.fields.timeToRead.minutes);
-
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -44,7 +43,7 @@ const BlogPostTemplate: React.FC<Props> = ({ data, pageContext, location, childr
           <div className={styles.hero_img}>
             {post.frontmatter.heroimage ? (
               <GatsbyImage
-                image={post.frontmatter.heroimage.sharp.fluid}
+                image={post.frontmatter.heroimage.childImageSharp.gatsbyImageData}
                 alt="post hero image"
               />
             ) : (
@@ -131,11 +130,9 @@ export const pageQuery = graphql`
         description
         tags
         heroimage {
-          sharp: childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
             }
-          }
         }
       }
     }
