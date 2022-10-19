@@ -30,10 +30,10 @@ const BlogPostTemplate: React.FC<Props> = ({ data, pageContext, location, childr
 
   return (
     <Layout location={location} title={siteTitle}>
-      {/* <SEO
+      <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
-      /> */}
+      />
       <article>
         <header className={styles.header}>
           <div className={styles.heading_container}>
