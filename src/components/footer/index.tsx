@@ -9,8 +9,7 @@ export const Footer: React.FC = () => {
       <div className={styles.footer__container}>
         <section>
           <p>
-            Jeg heter Michael Krøyserth-Simsø. Jeg en fullstackutvikler med
-            hovedfokus på frontend. Holder til i Tromsø. Liker alt Javscript. Har en
+            Jeg heter Michael Krøyserth-Simsø. Jeg en frontendutvikler med. Kan håndere baksiden godt ved behov. Holder til i Tromsø. Liker alt Javscript. Har en
             forkjærlighet for design og interaksjonsdesign. Synes i all
             hemmelighet at DevOps er spennende.
           </p>
