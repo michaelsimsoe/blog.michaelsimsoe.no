@@ -38,34 +38,32 @@ const BlogIndex: React.FC<Props> = ({ data, location }) => {
 
 export default BlogIndex;
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
+export const pageQuery = graphql`{
+  site {
+    siteMetadata {
+      title
     }
-    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            timeToRead {
-              minutes
-            }
-            slug
+  }
+  allMdx(sort: {frontmatter: {date: DESC}}) {
+    edges {
+      node {
+        excerpt
+        fields {
+          timeToRead {
+            minutes
           }
-          frontmatter {
-            date(formatString: "DD.MM.YYYY")
-            title
-            description
-            tags
-            published
-            updated(formatString: "DD.MM.YYYY")
-            slug
-          }
+          slug
+        }
+        frontmatter {
+          date(formatString: "DD.MM.YYYY")
+          title
+          description
+          tags
+          published
+          updated(formatString: "DD.MM.YYYY")
+          slug
         }
       }
     }
   }
-`;
+}`;
